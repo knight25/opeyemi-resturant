@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+<title> ONLINE FOODS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="4/w3.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+<script src="../../ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+body {
+    font: 400 15px Lato, Elephant;
+    line-height: 1.8;
+    color:#d8c4f8;}
+body { 
+background: url(static/IMAGES/fr.png) no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;}
+
+h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 30px;
+}  
+.jumbotron {
+    background-image:url("static/IMAGES/NI.jfif");
+    background-position: center;
+    background-size: cover;
+    color:black;
+    padding: 100px 25px;
+    width:1283px;
+    height:280px;
+    font-family: "Inconsolata",Bradley hand ;
+}
+.container-fluid {
+    padding: 60px 50px;
+}
+.bg-grey {
+    background-color: #f6f6f6;    
+}
+.logo-small {
+    color: #f4511e;
+    font-size: 50px;
+}
+.logo {
+    color: #f4511e;
+    font-size: 200px;
+}
+.thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+}
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+}
+.carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: #f4511e;
+}
+.carousel-indicators li {
+    border-color: #f4511e;
+}
+.carousel-indicators li.active {
+    background-color: #f4511e;
+}
+.item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+}
+.item span {
+    font-style: normal;
+}
+.panel {
+    border: 1px solid #f4511e; 
+    border-radius:0 !important;
+    transition: box-shadow 0.5s;
+}
+.panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+}
+.panel-footer .btn:hover {
+    border: 1px solid #f4511e;
+    background-color: #fff !important;
+    color: #f4511e;
+}
+.panel-heading {
+    color: #fff !important;
+    background-color: #f4511e !important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.panel-footer {
+    background-color: white !important;
+}
+.panel-footer h3 {
+    font-size: 32px;
+}
+.panel-footer h4 {
+    color: #aaa;
+    font-size: 14px;
+}
+.panel-footer .btn {
+    margin: 15px 0;
+    background-color: #f4511e;
+    color: #fff;
+}
+.navbar {
+    margin-bottom: 0;
+    background-color: #f4511e;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+}
+.navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+}
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #f4511e !important;
+    background-color: #fff !important;
+}
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
+footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #f4511e;
+}
+.slideanim {visibility:hidden;}
+.slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+}
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateY(70%);
+  } 
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@-webkit-keyframes slide {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  } 
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
+@media screen and (max-width: 768px) {
+  .col-sm-4 {
+    text-align: center;
+    margin: 25px 0;
+  }
+  .btn-lg {
+      width: 100%;
+      margin-bottom: 35px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .logo {
+      font-size: 150px;
+  }
+}
+.center {
+  margin: auto;
+  width: 33%;
+  padding: 10px;
+}
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1,h2,h3,h4,h5,h6 {
+font-family: "Inconsolata", sans-serif;
+  letter-spacing: 5px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color:white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: grey}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+<style>
+body {font-family: "Berlin Sans FB", Georgia, Serif;}
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Elephant";
+    letter-spacing: 5px;
+}
+body { 
+  background: url(static/images/fr.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;}
+body {
+    background-repeat:repeat-x;
+    width:940px;
+    margin-right:auto;
+    margin-left:auto;
+    box-sizing:border-box;
+    padding-left:40px;
+    padding-right:40px;
+    background-color: rgb(214, 224, 230);
+
+}
+</style>
+</style>
+<head>
+  <ul>
+    <li><a href="{{url_for('tops')}}">HOME</a></li>
+    <li><a href="#contact">CONTACT</a></li>
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">BREAKFAST MENU</a>
+      <div class="dropdown-content">
+           <a href="#Bread Basket">Bread Basket</a>
+           <a href="#Coffe">coffe</a>
+           <a href="#Honey Almond">Honey Almond</a>
+           <a href="#Waffle">Waffle</a>
+           <a href="#Eggs">Eggs</a>
+           <a href="#Pancakes">Pancakes</a>
+           <a href="#Dishes">Dishes</a>
+      </div>
+    </li>
+    <li><a href="{{url_for('tops3')}}">AFTERNOON MENU</a></li> 
+  </ul>
+</head>
+<body>
+
+  <!-- Menu Section -->
+  <div class="w3-row w3-padding-64" id="menu">
+    <div class="w3-col l6 w3-padding-large">
+      <div id="Bread Basket"></div>
+      <h1 class="w3-center">OUR BREAKFAST MENU</h1><br>
+      <h3>*Bread Basket*</h3>
+      <p class="w3-text-grey">Assortment of fresh baked fruit breads and muffins by 5.50</p><br>
+      <img src="static/IMAGES/uo.jpeg"  class="w3-circle" alt="tolu" width="400" height="300">
+      <img src="static/IMAGES/ti.jpeg" class="img-rounded" alt="tolu" width="400" height="300">
+      <br> <p><a href=""><button class="btn btn-default btn-lg">BREAD BASKET</button></a></p>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div id="Coffe"></div>
+      <h3>*coffe*</h3>
+      <p>Natural coffe with creamer by 5.50 </p>
+      <img src="static/IMAGES/lo.jfif"  class="w3-circle" alt="tolu" width="400" height="300">
+      <img src="static/IMAGES/do.jfif"  class="w3-circle" alt="tolu" width="400" height="300">
+      <br> <p><a href=""><button class="btn btn-default btn-lg">Coffe</button></a></p>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div id="Honey Almond"></div>
+      <h3>*Honey Almond Granola with Fruits*</h3>
+      <p class="w3-text-grey">Natural cereal of honey toasted oats, raisins, almonds and dates by 7.00</p><br>
+      <img src="static/IMAGES/fi.jpeg" class="img-rounded" alt="tolu" height=300px width=400px>
+      <img src="static/IMAGES/titi.jpeg" class="img-rounded" alt="tolu" height=300px width=400px>
+      <br> <p><a href=""><button class="btn btn-default btn-lg">Honey Almond</button></a></p>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div id="Waffle"></div>
+      <h3>*Belgian Waffle*</h3>
+      <p class="w3-text-grey">Vanilla flavored batter with malted flour by 7.50</p><br>
+      <img src="static/IMAGES/to.jpeg" class="img-rounded" alt="tolu" height=300px width=400px>
+      <img src="static/IMAGES/lu.jpeg" class="img-rounded" alt="tolu" height=300px width=400px>
+      <br> <p><a href=""><button class="btn btn-default btn-lg">Waffle</button></a></p>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div id="Eggs"></div>
+      <h3>*Scrambled eggs*</h3>
+      <p class="w3-text-grey">Scrambled eggs, roasted red pepper and garlic, with green onions by 7.50</p><br>
+      <img src="static/IMAGES/fa.jpeg" class="img-rounded" alt="tolu" height=300px width=400px>
+      <img src="static/IMAGES/fo.jpeg" class="img-rounded" alt="tolu" height=300px width=400px>
+      <br> <p><a href=""><button class="btn btn-default btn-lg">Eggs</button></a></p>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div id="Pancakes"></div>
+      <h3>*Blueberry Pancakes*</h3>
+      <p class="w3-text-grey">With syrup, butter and lots of berries by 8.50</p> 
+      <img src="static/IMAGES/ta.jpeg" class="img-rounded" alt="tolu" height=300px width=400px>   
+      <img src="static/IMAGES/so.jpeg" class="img-rounded" alt="tolu" height=300px width=400px>
+      <br> <p><a href=""><button class="btn btn-default btn-lg">Pancakes</button></a></p>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div id="Dishes"></div>
+      <h3>*continetal dishes*</h3>
+      <p>by 12.00</p>
+      <img src="static/IMAGES/30.jpg" class="img-rounded" alt="tolu" height=300px width=400px>
+      <img src="static/IMAGES/28.jpg" class="img-rounded" alt="tolu" height=300px width=400px>
+      <br> <p><a href=""><button class="btn btn-default btn-lg">Dishes</button></a></p>
+      <br>
+      <br>
+      <br>
+      <br>
+  </div>
+
+  <hr>
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-64" id="contact">
+    <h1>Contact</h1><br>
+    <p>We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.</p>
+    <p class="w3-text-blue-grey w3-large"><b>Catering Service,12 lekki plase ,lagos,nigeria</b></p>
+    <p>You can also contact us by phone 08046578234 or email opeyemitolulope25@gmail.com, or you can send us a message here:</p>
+    <form action="https://www.w3schools.com/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" size="70" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="number" size="70" placeholder="How many people" required name="People"></p>
+      <p><input class="w3-input w3-padding-16" type="datetime-local" size="70" placeholder="Date and time" required name="date" value="2017-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16" type="text" size="70" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-light-grey w3-section"  size="70" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+  
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-32">
+  <p>Powered by <a href="#" title="opeyemi tolulope" target="_blank" class="w3-hover-text-green">opeyemi tolulope</a></p>
+
+
+</body>
+
+</html>
